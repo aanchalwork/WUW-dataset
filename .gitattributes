@@ -7,3 +7,14 @@ LibriSpeech-dev-clean/dev-clean filter=lfs diff=lfs merge=lfs -text
 LibriSpeech-dev-clean/test_output2 filter=lfs diff=lfs merge=lfs -text
 LibriSpeech-dev-clean/textgrid2csv.py filter=lfs diff=lfs merge=lfs -text
 LibriSpeech-dev-clean/CHAPTERS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/dev-other.xlsx filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/librispeech-lexicon.txt filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/output_2 filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/BOOKS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/LICENSE.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/SPEAKERS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/dev-other filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/script1.py filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/script3.py filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/CHAPTERS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-dev-other/README.TXT filter=lfs diff=lfs merge=lfs -text
