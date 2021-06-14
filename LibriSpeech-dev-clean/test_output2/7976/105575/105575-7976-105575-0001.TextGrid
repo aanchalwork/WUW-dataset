@@ -1,0 +1,164 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.8 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 2.8 
+        intervals: size = 9 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.34 
+            text = "" 
+        intervals [2]:
+            xmin = 0.34 
+            xmax = 0.68 
+            text = "my" 
+        intervals [3]:
+            xmin = 0.68 
+            xmax = 0.86 
+            text = "own" 
+        intervals [4]:
+            xmin = 0.86 
+            xmax = 1.42 
+            text = "regiment" 
+        intervals [5]:
+            xmin = 1.42 
+            xmax = 1.58 
+            text = "was" 
+        intervals [6]:
+            xmin = 1.58 
+            xmax = 1.69 
+            text = "in" 
+        intervals [7]:
+            xmin = 1.69 
+            xmax = 1.82 
+            text = "the" 
+        intervals [8]:
+            xmin = 1.82 
+            xmax = 2.55 
+            text = "advance" 
+        intervals [9]:
+            xmin = 2.55 
+            xmax = 2.8 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 2.8 
+        intervals: size = 27 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.34 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.34 
+            xmax = 0.49 
+            text = "M" 
+        intervals [3]:
+            xmin = 0.49 
+            xmax = 0.68 
+            text = "AY1" 
+        intervals [4]:
+            xmin = 0.68 
+            xmax = 0.76 
+            text = "OW1" 
+        intervals [5]:
+            xmin = 0.76 
+            xmax = 0.86 
+            text = "N" 
+        intervals [6]:
+            xmin = 0.86 
+            xmax = 0.92 
+            text = "R" 
+        intervals [7]:
+            xmin = 0.92 
+            xmax = 1 
+            text = "EH1" 
+        intervals [8]:
+            xmin = 1 
+            xmax = 1.12 
+            text = "JH" 
+        intervals [9]:
+            xmin = 1.12 
+            xmax = 1.16 
+            text = "AH0" 
+        intervals [10]:
+            xmin = 1.16 
+            xmax = 1.23 
+            text = "M" 
+        intervals [11]:
+            xmin = 1.23 
+            xmax = 1.3 
+            text = "AH0" 
+        intervals [12]:
+            xmin = 1.3 
+            xmax = 1.34 
+            text = "N" 
+        intervals [13]:
+            xmin = 1.34 
+            xmax = 1.42 
+            text = "T" 
+        intervals [14]:
+            xmin = 1.42 
+            xmax = 1.45 
+            text = "W" 
+        intervals [15]:
+            xmin = 1.45 
+            xmax = 1.5 
+            text = "AH0" 
+        intervals [16]:
+            xmin = 1.5 
+            xmax = 1.58 
+            text = "Z" 
+        intervals [17]:
+            xmin = 1.58 
+            xmax = 1.64 
+            text = "IH0" 
+        intervals [18]:
+            xmin = 1.64 
+            xmax = 1.69 
+            text = "N" 
+        intervals [19]:
+            xmin = 1.69 
+            xmax = 1.74 
+            text = "DH" 
+        intervals [20]:
+            xmin = 1.74 
+            xmax = 1.82 
+            text = "IY0" 
+        intervals [21]:
+            xmin = 1.82 
+            xmax = 1.88 
+            text = "AH0" 
+        intervals [22]:
+            xmin = 1.88 
+            xmax = 1.94 
+            text = "D" 
+        intervals [23]:
+            xmin = 1.94 
+            xmax = 2 
+            text = "V" 
+        intervals [24]:
+            xmin = 2 
+            xmax = 2.15 
+            text = "AE1" 
+        intervals [25]:
+            xmin = 2.15 
+            xmax = 2.24 
+            text = "N" 
+        intervals [26]:
+            xmin = 2.24 
+            xmax = 2.55 
+            text = "S" 
+        intervals [27]:
+            xmin = 2.55 
+            xmax = 2.8 
+            text = "sp" 
