@@ -28,3 +28,13 @@ LibriSpeech-test-clean/CHAPTERS.TXT filter=lfs diff=lfs merge=lfs -text
 LibriSpeech-test-clean/LICENSE.TXT filter=lfs diff=lfs merge=lfs -text
 LibriSpeech-test-clean/SPEAKERS.TXT filter=lfs diff=lfs merge=lfs -text
 LibriSpeech-test-clean/script1.py filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/output_2 filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/script1.py filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/script3.py filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/BOOKS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/CHAPTERS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/SPEAKERS.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/test-other.xlsx filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/LICENSE.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/README.TXT filter=lfs diff=lfs merge=lfs -text
+LibriSpeech-test-other/test-other filter=lfs diff=lfs merge=lfs -text
