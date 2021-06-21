@@ -1,0 +1,164 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 2.82 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 2.82 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.08 
+            text = "" 
+        intervals [2]:
+            xmin = 0.08 
+            xmax = 0.4 
+            text = "it's" 
+        intervals [3]:
+            xmin = 0.4 
+            xmax = 0.95 
+            text = "nothing" 
+        intervals [4]:
+            xmin = 0.95 
+            xmax = 1.16 
+            text = "but" 
+        intervals [5]:
+            xmin = 1.16 
+            xmax = 1.26 
+            text = "a" 
+        intervals [6]:
+            xmin = 1.26 
+            xmax = 1.34 
+            text = "" 
+        intervals [7]:
+            xmin = 1.34 
+            xmax = 1.69 
+            text = "big" 
+        intervals [8]:
+            xmin = 1.69 
+            xmax = 2.28 
+            text = "carriage" 
+        intervals [9]:
+            xmin = 2.28 
+            xmax = 2.67 
+            text = "gate" 
+        intervals [10]:
+            xmin = 2.67 
+            xmax = 2.82 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 2.82 
+        intervals: size = 26 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.08 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.08 
+            xmax = 0.25 
+            text = "IH1" 
+        intervals [3]:
+            xmin = 0.25 
+            xmax = 0.32 
+            text = "T" 
+        intervals [4]:
+            xmin = 0.32 
+            xmax = 0.4 
+            text = "S" 
+        intervals [5]:
+            xmin = 0.4 
+            xmax = 0.63 
+            text = "N" 
+        intervals [6]:
+            xmin = 0.63 
+            xmax = 0.71 
+            text = "AH1" 
+        intervals [7]:
+            xmin = 0.71 
+            xmax = 0.79 
+            text = "TH" 
+        intervals [8]:
+            xmin = 0.79 
+            xmax = 0.84 
+            text = "IH0" 
+        intervals [9]:
+            xmin = 0.84 
+            xmax = 0.95 
+            text = "NG" 
+        intervals [10]:
+            xmin = 0.95 
+            xmax = 1 
+            text = "B" 
+        intervals [11]:
+            xmin = 1 
+            xmax = 1.07 
+            text = "AH1" 
+        intervals [12]:
+            xmin = 1.07 
+            xmax = 1.16 
+            text = "T" 
+        intervals [13]:
+            xmin = 1.16 
+            xmax = 1.26 
+            text = "AH0" 
+        intervals [14]:
+            xmin = 1.26 
+            xmax = 1.34 
+            text = "sp" 
+        intervals [15]:
+            xmin = 1.34 
+            xmax = 1.4 
+            text = "B" 
+        intervals [16]:
+            xmin = 1.4 
+            xmax = 1.5 
+            text = "IH1" 
+        intervals [17]:
+            xmin = 1.5 
+            xmax = 1.69 
+            text = "G" 
+        intervals [18]:
+            xmin = 1.69 
+            xmax = 1.96 
+            text = "K" 
+        intervals [19]:
+            xmin = 1.96 
+            xmax = 2.01 
+            text = "AE1" 
+        intervals [20]:
+            xmin = 2.01 
+            xmax = 2.06 
+            text = "R" 
+        intervals [21]:
+            xmin = 2.06 
+            xmax = 2.16 
+            text = "IH0" 
+        intervals [22]:
+            xmin = 2.16 
+            xmax = 2.28 
+            text = "JH" 
+        intervals [23]:
+            xmin = 2.28 
+            xmax = 2.36 
+            text = "G" 
+        intervals [24]:
+            xmin = 2.36 
+            xmax = 2.51 
+            text = "EY1" 
+        intervals [25]:
+            xmin = 2.51 
+            xmax = 2.67 
+            text = "T" 
+        intervals [26]:
+            xmin = 2.67 
+            xmax = 2.82 
+            text = "sp" 
