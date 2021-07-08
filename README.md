@@ -1,2 +1,22 @@
 # CLIPA Tool
-API1 will convert any type of document structure to 1 folder containing all files in it. It also passes the dataset to the aligner to generate output. API2 should be executed first before running the API1 because it contains the installation of necessary files required for running the api1 script.
+
+Before using this tool some packages need to be installed. All the installations given below are done in [Anaconda](https://docs.anaconda.com/anaconda/install/windows/).
+## Installation
+For generating the aligned audio clips we use a third party tool, [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/introduction.html). So for installing this MFA tool follow the steps given in the [documentation](https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html).<br />
+If you have followed the installation steps given in the documentation we can observe that all the installation is done in an environment named aligner. Now the next steps should also be downloaded in the aligner environment. So before running the below commands make sure that you are in the aligner environment ("conda activate aligner").<br/>
+
+pip install mutagen <br/>
+conda install -c main ffmpeg <br/>
+pip install pydub <br/>
+conda install -c anaconda git <br/>
+git clone https://github.com/kylerbrown/textgrid.git <br/>
+cd textgrid <br/>
+pip install . <br/>
+
+### get_output.py
+This script is used for changing the directory structure and running the mfa aligner on the mfa_data. The output files will be stored in the directory named output.<br/>
+
+**Note**: 
+1. The dataset name should be *mfa_data* or you can just clone this repisitory and copy all the dataset files in the mfa_data.  
+1. The dataset files should contain the audio files(16 bit mono wav file) and their corresponding .lab files with same name.
+
