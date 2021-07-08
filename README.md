@@ -20,3 +20,9 @@ This script is used for changing the directory structure and running the mfa ali
 1. The dataset name should be *mfa_data* or you can just clone this repisitory and copy all the dataset files in the mfa_data.  
 1. The dataset files should contain the audio files(16 bit mono wav file) and their corresponding .lab files with same name.
 
+### get_audio.py
+This script generates the audio clips of words whose word length lies between 4 and 25 and time length lies between 0.5 and 1.5 seconds. All these audio clips are clipped such a way that silence is added to the clip before and after with a stride length of 100 milli seconds to make the time length 1500 milli seconds.<br/>
+First this script moves all the .textgrid files in output to mfa_data directory. Then it clips out individual words with the help of textgrid files and it adds the silence as discussed above. All these files are in the audio folder.
+
+After running the installation steps run the get_output.py and then the get_audio.py.
+
