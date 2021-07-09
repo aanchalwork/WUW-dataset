@@ -27,7 +27,10 @@ Clipping is done in the follwing methods mentioned:
 1.  All these audio clips are clipped such a way that silence is added to the clip before and after with a stride length of 100 milli seconds to make the time length 1500 milli seconds.
 2. Chuncks of 1500 milliseconds are taken out from the audio clip in different time ranges with stride length of 100 milliseconds such a way that the required word is present in it.
 3. Clipping is done such a way that 2 adjacent words are clipped from the sentence. Silence is added as mentioned in method 1.
-**Note**: If a stop word is in between 2 words then these words are also adjacent. In this case stop word is removed and a silence of 100 milliseconds is added between 2 words.
+
+**Note**:
+1. If a stop word is in between 2 words then these words are also adjacent. In this case stop word is removed and a silence of 100 milliseconds is added between 2 words.<br/>
+
 First this script moves all the .textgrid files in output to mfa_data directory. Then it clips out individual words with the help of textgrid files and it does clipping as discussed above. All these files are in the audio folder.
 
 After running the installation steps run the get_output.py and then the get_audio.py.
