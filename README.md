@@ -12,6 +12,7 @@ conda install -c anaconda git <br/>
 git clone https://github.com/kylerbrown/textgrid.git <br/>
 cd textgrid <br/>
 pip install . <br/>
+Install the NLTK module from the [website](https://www.nltk.org/install.html)
 
 ### get_output.py
 This script is used for changing the directory structure and running the mfa aligner on the mfa_data. The output files will be stored in the directory named output.<br/>
@@ -21,8 +22,13 @@ This script is used for changing the directory structure and running the mfa ali
 1. The dataset files should contain the audio files(16 bit mono wav file) and their corresponding .lab files with same name.
 
 ### get_audio.py
-This script generates the audio clips of words whose word length lies between 4 and 25 and time length lies between 0.5 and 1.5 seconds. All these audio clips are clipped such a way that silence is added to the clip before and after with a stride length of 100 milli seconds to make the time length 1500 milli seconds.<br/>
-First this script moves all the .textgrid files in output to mfa_data directory. Then it clips out individual words with the help of textgrid files and it adds the silence as discussed above. All these files are in the audio folder.
+This script generates the audio clips of words whose word length lies between 4 and 25 and time length lies between 0.5 and 1.5 seconds and then the clipping is done.
+Clipping is done in the follwing methods mentioned:
+1.  All these audio clips are clipped such a way that silence is added to the clip before and after with a stride length of 100 milli seconds to make the time length 1500 milli seconds.
+2. Chuncks of 1500 milliseconds are taken out from the audio clip in different time ranges with stride length of 100 milliseconds such a way that the required word is present in it.
+3. Clipping is done such a way that 2 adjacent words are clipped from the sentence. Silence is added as mentioned in method 1.
+**Note**: If a stop word is in between 2 words then these words are also adjacent. In this case stop word is removed and a silence of 100 milliseconds is added between 2 words.
+First this script moves all the .textgrid files in output to mfa_data directory. Then it clips out individual words with the help of textgrid files and it does clipping as discussed above. All these files are in the audio folder.
 
 After running the installation steps run the get_output.py and then the get_audio.py.
 
