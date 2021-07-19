@@ -32,6 +32,7 @@ for fil in li:
         tgrid = textgrid.read_textgrid(fil)
         wav_name = fil[:-9]
         word_list = []
+        total = []
         silence = False
         for each in tgrid:
             if each.tier == "words":
@@ -42,6 +43,7 @@ for fil in li:
                     start = float(each.start)*1000
                     stop = float(each.stop)*1000
                     if 25 > len(name) > 4 and 1500 > tim > 500:
+                        total.append([name,start,stop])
                         if name not in audio_list:
                             os.mkdir(os.path.join(aud_path,name))
                             audio_list.append(name)
@@ -50,6 +52,8 @@ for fil in li:
                         k = 0
                         while(tim + k <= 1500):
                             sil_audio = AudioSegment.silent(duration=k) + new_audio + AudioSegment.silent(duration=(1500-tim-k))
+                            n = len(sil_audio)
+                            sil_audio = sil_audio +  AudioSegment.silent(duration=1500-n)
                             sil_audio.export(os.path.join(aud_path,name, name + str(int(k/100))+ "_" + wav_name +".wav"),"wav")
                             k = k+ 100
                         
@@ -101,10 +105,39 @@ for fil in li:
                             k = 0
                             while(tim + k <= 1500):
                                 sil_audio = AudioSegment.silent(duration=k) + new_audio + AudioSegment.silent(duration=(1500-tim-k))
+                                n = len(sil_audio)
+                                sil_audio = sil_audio +  AudioSegment.silent(duration=1500-n)
                                 sil_audio.export(os.path.join(aud_path,name, name + str(int(k/100))+ "_" + wav_name +".wav"),"wav")
                                 k = k+ 100
                         word_list.clear()
                         word_list.append(copy.deepcopy(each))
+
+
+
+
+        if len(total) >= 3:
+            length = len(total)
+            for i in range(0,length-2):
+                for j in range(i+1,length-1):
+                    for k in range(i+2,length):
+                        name = total[i][0] + "_" + total[j][0] + "_" + total[k][0]
+                        myaudio = AudioSegment.from_wav(wav_name+".wav", "wav")
+                        new_audio = myaudio[total[i][1] : total[i][2]] + AudioSegment.silent(duration=100) + myaudio[total[j][1] : total[j][2]] + AudioSegment.silent(duration=100) + myaudio[total[k][1] : total[k][2]]
+                        tim = total[i][2] - total[i][1] + total[j][2] - total[j][1] + total[k][2] - total[k][1] + 200
+                        if tim < 1500:
+                            if name not in audio_list:
+                                os.mkdir(os.path.join(aud_path,name))
+                                audio_list.append(name)
+                        k = 0
+                        while(tim + k <= 1500):
+                            sil_audio = AudioSegment.silent(duration=k) + new_audio + AudioSegment.silent(duration=(1500-tim-k))
+                            n = len(sil_audio)
+                            sil_audio = sil_audio +  AudioSegment.silent(duration=1500-n)
+                            sil_audio.export(os.path.join(aud_path,name, name + str(int(k/100))+ "_" + wav_name +".wav"),"wav")
+                            k = k+ 100
+                        
+
+
 
 
                     
